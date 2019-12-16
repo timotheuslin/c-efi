@@ -14,7 +14,8 @@ ABOUT:
         documentation how to get started.
 
 DETAILS:
-        https://c-util.github.io/c-efi
+        https://dvdhrm.github.io/2019/01/31/goodbye-gnuefi/
+        https://c-util.github.io/c-efi (404)
 
 BUG REPORTS:
         https://github.com/c-util/c-efi/issues
@@ -47,11 +48,9 @@ INSTALL:
 
             $ mkdir build
             $ cd build
-            $ meson setup \
-                  --cross-file ../src/x86_64-unknown-uefi.mesoncross.ini \
-                  ..
+            $ meson setup --cross-file ../src/x86_64-unknown-uefi.mesoncross.ini ..
             $ ninja
             $ meson test
-            # ninja install
+            (un-used) # ninja install
 
         For custom configuration options see meson_options.txt.
