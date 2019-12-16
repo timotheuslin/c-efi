@@ -38,6 +38,7 @@ REQUIREMENTS:
 
             meson >= 0.41
             pkg-config >= 0.29
+            clang >= 9.0.0
 
 INSTALL:
         The meson build-system is used for this project. Contact upstream
