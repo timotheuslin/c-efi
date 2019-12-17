@@ -41,16 +41,17 @@ REQUIREMENTS:
             pkg-config >= 0.29
             clang >= 9.0.0
 
-INSTALL:
+BUILD/INSTALLATION:
         The meson build-system is used for this project. Contact upstream
         documentation for detailed help. In most situations the following
         commands are sufficient to build and install from source:
 
-            $ mkdir build
-            $ cd build
-            $ meson setup --cross-file ../src/x86_64-unknown-uefi.mesoncross.ini ..
-            $ ninja
+            $ git clone https://github.com/timotheuslin/c-efi.git
+            $ cd c-efi
+            $ meson setup build_dir --cross-file src/x86_64-unknown-uefi.mesoncross.ini
+            $ ninja -C build_dir
+            $ cd build_dir
             $ meson test
-            (un-used) # ninja install
+            (unused) # ninja install
 
         For custom configuration options see meson_options.txt.
